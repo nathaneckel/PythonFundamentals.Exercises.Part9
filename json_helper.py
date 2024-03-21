@@ -9,18 +9,16 @@ read_json()
 #OPEN > CONVERT > RETURN json object
 # #1. #given a string representing filePath:
 ##this function must OPEN the json @filePath and
-# #convert contents to a json Object.
-# #Json object should be returned
-#
+# #convert contents to a json Object. #Json object should be returned
+
 # #Part B
 # Define a function called read_all_json_files.
 # Given a string representing a path to a directory,
-# this function should read all of the json files and
-# return a list containing all of the json objects.
-# Make sure to incorporate the work from part A.
+# - read all of the json files + return a list containing all json objects.
+# - incorporate the work from part A.
 
 def read_all_json_files():
-    json_data = open('~/Dev/Labs/PythonFundamentals.Exercises.Part9') as dir:
+    json_data = open('~/Dev/Labs/PythonFundamentals.Exercises.Part9')
 
     for item in json_data:
         for data_item in item['data']:
