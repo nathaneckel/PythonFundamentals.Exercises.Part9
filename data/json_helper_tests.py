@@ -4,7 +4,10 @@ import unittest
 
 from json_helper import read_json, read_json_files_and_print_contents
 
-
+#example of test errors I'm getting:
+#FileNotFoundError: [Errno 2] No such file or directory: 'data/He-Man_Figures/He-Man.json'
+#I am confused; that IS actually the path to the file.
+#Have several other labs to catch up on so I'm doing that.
 class TestFunctions(unittest.TestCase):
 
     def test_read_json(self):
